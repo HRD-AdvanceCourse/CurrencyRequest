@@ -24,7 +24,7 @@
     self.request = [CRCurrencyRequest new];
     
     self.request.delegate = self;
-    [self.request start];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,7 +34,14 @@
 
 - (void)currencyRequest:(CRCurrencyRequest *)req
     retrievedCurrencies:(CRCurrencyResults *)currencies{
-    _textView.text = [currencies description];
+    int dollor = (int) self.inputUSCurrency.text;
+    
+    self.labelSEK.text =[NSString stringWithFormat:@"SEK Currency = %f", dollor * currencies.SEK];
+    self.labelJapaneseCurrency.text = [NSString stringWithFormat:@"Japanese Currency = %f", dollor * currencies.JPY];
+    self.labelPLN.text = [NSString stringWithFormat:@"PLN Currency = %f", dollor * currencies.PLN];
+}
+- (IBAction)convertCurrency:(id)sender {
+    [self.request start];
 }
 
 @end

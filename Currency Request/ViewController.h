@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet UITextField *inputUSCurrency;
+@property (weak, nonatomic) IBOutlet UILabel *labelJapaneseCurrency;
+@property (weak, nonatomic) IBOutlet UILabel *labelSEK;
+@property (weak, nonatomic) IBOutlet UILabel *labelPLN;
 
 @end
 
