@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '76696859537E16D42D333500'
+               BlueprintIdentifier = '60210DA3FF7D4FE5CABE4EB4'
                BlueprintName = 'CurrencyRequest'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libCurrencyRequest.a'>
